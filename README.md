@@ -1,13 +1,17 @@
-# Coachsite
+# Chelsea Seymour Coaching
 
-A professional triathlon coaching website built with [Astro](https://astro.build) and deployed to GitHub Pages.
+A professional Ironman and triathlon coaching website for Chelsea Seymour, built with [Astro](https://astro.build) and deployed to GitHub Pages.
+
+**🌐 Live Site:** [https://robbieveivers.github.io/Coachsite/](https://robbieveivers.github.io/Coachsite/)
 
 ## 🚀 Features
 
-- **Home Page**: Overview of coaching services with call-to-action
-- **About Page**: Coach credentials, approach, and philosophy
-- **Contact Page**: Contact information and consultation details
+- **Home Page**: Overview of Chelsea's coaching services with Ironman and swim focus
+- **About Page**: Chelsea's background, approach, and coaching philosophy
+- **Contact Page**: Contact information and free consultation details
+- **Pink Theme**: Custom color scheme reflecting Chelsea's brand
 - **Responsive Design**: Modern, clean design that works on all devices
+- **YouTube Integration**: Links to Chelsea's YouTube channel
 - **GitHub Pages Deployment**: Automatic deployment via GitHub Actions
 
 ## 🏗️ Project Structure
@@ -52,9 +56,13 @@ To enable GitHub Pages:
 
 The site will be available at: `https://robbieveivers.github.io/Coachsite/`
 
-## 📝 Customization
+## 📝 About Chelsea Seymour
 
-- Update the contact email in `src/pages/contact.astro`
-- Modify the coaching information in `src/pages/about.astro`
-- Adjust the services offered in `src/pages/index.astro`
-- Change the site colors by modifying CSS variables in `src/layouts/Layout.astro`
+Chelsea Seymour is an Ironman athlete and triathlon coach specializing in swim technique and endurance training. Her coaching focuses on:
+- 🏊‍♀️ Swim technique excellence
+- 🚴‍♀️ Personalized Ironman training plans
+- 🏃‍♀️ Race day preparation and strategy
+
+Connect with Chelsea:
+- **YouTube**: [@chels.seymour](https://youtube.com/@chels.seymour)
+- **Email**: chelsea@example.com
