@@ -11,7 +11,7 @@ const base = import.meta.env.BASE_URL;
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Professional triathlon coaching services" />
+    <meta name="description" content="Professional Ironman and triathlon coaching with Chelsea Seymour" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
@@ -29,18 +29,23 @@ const base = import.meta.env.BASE_URL;
       <slot />
     </main>
     <footer>
-      <p>&copy; 2025 Triathlon Coaching. All rights reserved.</p>
+      <p>&copy; 2025 Chelsea Seymour Coaching. All rights reserved.</p>
+      <p>
+        <a href="https://youtube.com/@chels.seymour" target="_blank" rel="noopener noreferrer">
+          🎥 YouTube Channel
+        </a>
+      </p>
     </footer>
   </body>
 </html>
 
 <style>
   :root {
-    --accent: #2563eb;
-    --accent-dark: #1e40af;
+    --accent: #ec4899;
+    --accent-dark: #be185d;
     --black: #13151a;
     --gray: #3f3f46;
-    --gray-light: #f4f4f5;
+    --gray-light: #fdf2f8;
     --white: #ffffff;
   }
   
@@ -99,5 +104,16 @@ const base = import.meta.env.BASE_URL;
     padding: 2rem;
     text-align: center;
     color: var(--gray);
+  }
+  
+  footer a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s;
+  }
+  
+  footer a:hover {
+    opacity: 0.8;
   }
 </style>
