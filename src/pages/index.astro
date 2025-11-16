@@ -1,0 +1,86 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Triathlon Coaching - Home">
+  <h1>Welcome to Professional Triathlon Coaching</h1>
+  
+  <section>
+    <h2>Transform Your Triathlon Performance</h2>
+    <p>
+      Whether you're a beginner looking to complete your first triathlon or an experienced
+      athlete aiming for a personal best, our coaching services are designed to help you
+      reach your goals.
+    </p>
+  </section>
+
+  <section>
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>Personalized Training Plans</h3>
+        <p>Custom training programs tailored to your fitness level, schedule, and goals.</p>
+      </div>
+      <div class="service-card">
+        <h3>Technical Analysis</h3>
+        <p>Video analysis and technique refinement for swimming, cycling, and running.</p>
+      </div>
+      <div class="service-card">
+        <h3>Race Day Strategy</h3>
+        <p>Comprehensive race preparation, nutrition planning, and pacing strategies.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Ready to Get Started?</h2>
+    <p>
+      <a href="/contact" class="cta-button">Contact Me Today</a>
+    </p>
+  </section>
+</Layout>
+
+<style>
+  h1 {
+    color: var(--accent);
+    margin-bottom: 2rem;
+  }
+
+  section {
+    margin: 3rem 0;
+  }
+
+  .services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .service-card {
+    background: var(--gray-light);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .service-card h3 {
+    color: var(--accent);
+    margin-top: 0;
+  }
+
+  .cta-button {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--white);
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background 0.2s;
+  }
+
+  .cta-button:hover {
+    background: var(--accent-dark);
+  }
+</style>

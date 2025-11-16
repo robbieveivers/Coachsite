@@ -1,0 +1,95 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About Me - Triathlon Coaching">
+  <h1>About Your Coach</h1>
+  
+  <section>
+    <h2>Experience & Credentials</h2>
+    <p>
+      As a dedicated triathlon coach with years of experience in endurance sports, I'm
+      passionate about helping athletes of all levels achieve their triathlon goals.
+    </p>
+    <p>
+      My coaching philosophy is built on the principles of structured training,
+      progressive overload, and personalized attention. I believe that every athlete
+      is unique and deserves a training plan that fits their individual needs,
+      lifestyle, and aspirations.
+    </p>
+  </section>
+
+  <section>
+    <h2>My Approach</h2>
+    <ul>
+      <li><strong>Individualized Training:</strong> Every plan is customized to your specific needs and goals</li>
+      <li><strong>Data-Driven:</strong> Using the latest sports science and performance metrics</li>
+      <li><strong>Holistic Development:</strong> Focus on all three disciplines plus nutrition and recovery</li>
+      <li><strong>Continuous Support:</strong> Regular check-ins and plan adjustments as needed</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Why Work With Me?</h2>
+    <p>
+      I understand the challenges of balancing training with work, family, and other
+      commitments. My coaching approach is flexible and sustainable, designed to help
+      you improve while maintaining a healthy life balance.
+    </p>
+    <p>
+      Whether you're targeting a sprint triathlon or an Ironman, I'll be with you
+      every step of the way, providing expert guidance, motivation, and support.
+    </p>
+  </section>
+
+  <section>
+    <p>
+      <a href="/contact" class="cta-button">Start Your Journey</a>
+    </p>
+  </section>
+</Layout>
+
+<style>
+  h1 {
+    color: var(--accent);
+    margin-bottom: 2rem;
+  }
+
+  section {
+    margin: 3rem 0;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  ul li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+
+  ul li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: bold;
+  }
+
+  .cta-button {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--white);
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background 0.2s;
+  }
+
+  .cta-button:hover {
+    background: var(--accent-dark);
+  }
+</style>

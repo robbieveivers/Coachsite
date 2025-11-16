@@ -1,0 +1,105 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contact Me - Triathlon Coaching">
+  <h1>Get In Touch</h1>
+  
+  <section>
+    <h2>Ready to Start Your Coaching Journey?</h2>
+    <p>
+      I'd love to hear from you! Whether you have questions about my coaching services,
+      want to discuss your training goals, or are ready to get started, please reach out.
+    </p>
+  </section>
+
+  <section class="contact-info">
+    <div class="info-card">
+      <h3>Email</h3>
+      <p>
+        <a href="mailto:coach@example.com">coach@example.com</a>
+      </p>
+    </div>
+    
+    <div class="info-card">
+      <h3>Schedule a Consultation</h3>
+      <p>
+        Let's discuss your goals and how I can help you achieve them.
+        Free initial consultation available.
+      </p>
+    </div>
+    
+    <div class="info-card">
+      <h3>Response Time</h3>
+      <p>
+        I typically respond to all inquiries within 24-48 hours.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>What to Expect</h2>
+    <ol>
+      <li><strong>Initial Consultation:</strong> We'll discuss your background, goals, and training availability</li>
+      <li><strong>Assessment:</strong> Evaluate your current fitness level and identify areas for improvement</li>
+      <li><strong>Custom Plan:</strong> Receive your personalized training program</li>
+      <li><strong>Ongoing Support:</strong> Regular check-ins and plan adjustments to keep you on track</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Coaching Packages</h2>
+    <p>
+      Multiple coaching options are available to suit different needs and budgets.
+      Contact me to learn more about packages and pricing.
+    </p>
+  </section>
+</Layout>
+
+<style>
+  h1 {
+    color: var(--accent);
+    margin-bottom: 2rem;
+  }
+
+  section {
+    margin: 3rem 0;
+  }
+
+  .contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .info-card {
+    background: var(--gray-light);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .info-card h3 {
+    color: var(--accent);
+    margin-top: 0;
+  }
+
+  .info-card a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .info-card a:hover {
+    text-decoration: underline;
+  }
+
+  ol {
+    line-height: 2;
+  }
+
+  ol li {
+    margin: 1rem 0;
+  }
+</style>
