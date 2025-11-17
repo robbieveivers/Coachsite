@@ -4,10 +4,17 @@ const base = import.meta.env.BASE_URL;
 ---
 
 <Layout title="About Chelsea - Ironman Coach">
-  <h1>About Chelsea Seymour</h1>
+  <div class="about-header">
+    <div class="about-image-container">
+      <img src={`${base}/about-coach.svg`} alt="Chelsea Seymour Coach" class="about-image" />
+    </div>
+    <div class="about-intro">
+      <h1>About Chelsea Seymour</h1>
+      <p class="tagline">Your Ironman Journey Partner</p>
+    </div>
+  </div>
   
-  <section>
-    <h2>Your Ironman Journey Partner</h2>
+  <section class="bio">
     <p>
       I'm Chelsea Seymour, an Ironman athlete and triathlon coach dedicated to helping 
       you achieve your endurance goals. My passion for swimming, cycling, and running 
@@ -60,24 +67,91 @@ const base = import.meta.env.BASE_URL;
 </Layout>
 
 <style>
-  h1 {
+  .about-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, var(--gray-light) 0%, var(--gray-lighter) 100%);
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+  }
+  
+  .about-image-container {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .about-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .about-intro h1 {
     color: var(--accent);
-    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    margin: 0 0 1rem 0;
+    font-weight: 800;
+  }
+  
+  .tagline {
+    font-size: 1.4rem;
+    color: var(--gray);
+    margin: 0;
+    font-weight: 500;
+  }
+  
+  .bio {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    border-left: 5px solid var(--accent);
+    margin-bottom: 3rem;
+  }
+  
+  .bio p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--gray);
+    margin: 1rem 0;
   }
 
   section {
     margin: 3rem 0;
   }
+  
+  section h2 {
+    color: var(--accent);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+  }
 
   ul {
     list-style: none;
     padding: 0;
+    background: var(--gray-light);
+    border-radius: 12px;
+    padding: 2rem;
   }
 
   ul li {
-    padding: 0.5rem 0;
-    padding-left: 1.5rem;
+    padding: 1rem 0;
+    padding-left: 2.5rem;
     position: relative;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--gray);
+    border-bottom: 1px solid rgba(236, 72, 153, 0.1);
+  }
+  
+  ul li:last-child {
+    border-bottom: none;
   }
 
   ul li::before {
@@ -86,20 +160,39 @@ const base = import.meta.env.BASE_URL;
     left: 0;
     color: var(--accent);
     font-weight: bold;
+    font-size: 1.3rem;
   }
 
   .cta-button {
     display: inline-block;
-    background: var(--accent);
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
     color: var(--white);
-    padding: 1rem 2rem;
+    padding: 1.2rem 2.5rem;
     text-decoration: none;
-    border-radius: 4px;
-    font-weight: 600;
-    transition: background 0.2s;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-md);
   }
 
   .cta-button:hover {
-    background: var(--accent-dark);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  @media (max-width: 768px) {
+    .about-header {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    
+    .about-intro h1 {
+      font-size: 2rem;
+    }
+    
+    .tagline {
+      font-size: 1.2rem;
+    }
   }
 </style>
