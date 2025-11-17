@@ -1,30 +1,69 @@
 <svg width="1200" height="500" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#ec4899;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#be185d;stop-opacity:1" />
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0284c7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="waterGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0284c7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0c4a6e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="roadGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#71717a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#52525b;stop-opacity:1" />
     </linearGradient>
   </defs>
-  <rect width="1200" height="500" fill="url(#heroGrad)"/>
-  <text x="600" y="200" font-family="Arial, sans-serif" font-size="72" fill="white" text-anchor="middle" font-weight="bold">TRIATHLON</text>
-  <text x="600" y="280" font-family="Arial, sans-serif" font-size="48" fill="white" text-anchor="middle" font-weight="bold">COACHING</text>
-  <g transform="translate(350, 320)">
-    <circle cx="50" cy="40" r="30" fill="white" opacity="0.9"/>
-    <circle cx="50" cy="50" r="20" fill="none" stroke="white" stroke-width="3"/>
-    <line x1="50" y1="70" x2="50" y2="100" stroke="white" stroke-width="4"/>
-    <line x1="50" y1="100" x2="30" y2="130" stroke="white" stroke-width="4"/>
-    <line x1="50" y1="100" x2="70" y2="130" stroke="white" stroke-width="4"/>
+  
+  <!-- Sky background -->
+  <rect width="1200" height="200" fill="url(#skyGrad)"/>
+  
+  <!-- Water -->
+  <rect y="200" width="400" height="300" fill="url(#waterGrad)"/>
+  
+  <!-- Road -->
+  <rect x="400" y="200" width="400" height="300" fill="url(#roadGrad)"/>
+  
+  <!-- Track -->
+  <ellipse cx="1000" cy="350" rx="200" ry="150" fill="#dc2626" opacity="0.3"/>
+  
+  <!-- Sun -->
+  <circle cx="1050" cy="80" r="50" fill="#fbbf24" opacity="0.8"/>
+  
+  <!-- Water waves -->
+  <path d="M 0 250 Q 50 240, 100 250 T 200 250 T 300 250 T 400 250" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.4"/>
+  <path d="M 0 280 Q 50 270, 100 280 T 200 280 T 300 280 T 400 280" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.4"/>
+  
+  <!-- Road lines -->
+  <rect x="490" y="220" width="20" height="60" fill="#fbbf24" opacity="0.7"/>
+  <rect x="490" y="300" width="20" height="60" fill="#fbbf24" opacity="0.7"/>
+  <rect x="490" y="380" width="20" height="60" fill="#fbbf24" opacity="0.7"/>
+  
+  <!-- Swimming icon (stylized) -->
+  <g transform="translate(150, 320)" opacity="0.9">
+    <ellipse cx="0" cy="0" rx="35" ry="25" fill="#ec4899"/>
+    <circle cx="-10" cy="-5" r="12" fill="#fdf2f8"/>
+    <path d="M -30 0 Q -25 -15, 0 -5" stroke="#fdf2f8" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M 20 5 Q 30 10, 40 5" stroke="#fdf2f8" stroke-width="6" fill="none" stroke-linecap="round"/>
   </g>
-  <g transform="translate(550, 340)">
-    <circle cx="30" cy="30" r="15" fill="white" opacity="0.9"/>
-    <circle cx="70" cy="30" r="15" fill="white" opacity="0.9"/>
-    <rect x="20" y="45" width="60" height="25" rx="5" fill="white" opacity="0.9"/>
-    <line x1="40" y1="45" x2="60" y2="45" stroke="#ec4899" stroke-width="2"/>
+  
+  <!-- Cycling icon (stylized) -->
+  <g transform="translate(600, 320)" opacity="0.9">
+    <circle cx="-30" cy="20" r="18" fill="none" stroke="#ec4899" stroke-width="4"/>
+    <circle cx="30" cy="20" r="18" fill="none" stroke="#ec4899" stroke-width="4"/>
+    <path d="M -30 20 L 0 -10 L 30 20 L 0 5 Z" stroke="#ec4899" stroke-width="4" fill="none" stroke-linejoin="round"/>
+    <circle cx="0" cy="-15" r="8" fill="#fdf2f8"/>
   </g>
-  <g transform="translate(700, 340)">
-    <ellipse cx="40" cy="50" rx="25" ry="15" fill="white" opacity="0.9"/>
-    <line x1="20" y1="50" x2="40" y2="30" stroke="white" stroke-width="3"/>
-    <line x1="40" y1="30" x2="50" y2="50" stroke="white" stroke-width="3"/>
-    <line x1="50" y1="50" x2="60" y2="70" stroke="white" stroke-width="3"/>
+  
+  <!-- Running icon (stylized) -->
+  <g transform="translate(950, 320)" opacity="0.9">
+    <circle cx="0" cy="-15" r="12" fill="#fdf2f8"/>
+    <path d="M 0 0 L 0 25" stroke="#ec4899" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 0 25 L -15 45" stroke="#ec4899" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 0 25 L 18 45" stroke="#ec4899" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 0 5 L -20 0" stroke="#ec4899" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 0 5 L 18 12" stroke="#ec4899" stroke-width="6" stroke-linecap="round"/>
   </g>
+  
+  <!-- Text overlay with semi-transparent background -->
+  <rect x="0" y="0" width="1200" height="500" fill="rgba(0,0,0,0.3)"/>
 </svg>

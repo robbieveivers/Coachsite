@@ -1,19 +1,59 @@
-<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="runGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#047857;stop-opacity:1" />
     </linearGradient>
   </defs>
-  <rect width="400" height="300" fill="url(#runGrad)"/>
-  <circle cx="220" cy="70" r="25" fill="white" opacity="0.9"/>
-  <line x1="220" y1="95" x2="220" y2="160" stroke="white" stroke-width="8" stroke-linecap="round"/>
-  <line x1="220" y1="120" x2="180" y2="100" stroke="white" stroke-width="7" stroke-linecap="round"/>
-  <line x1="220" y1="120" x2="260" y2="140" stroke="white" stroke-width="7" stroke-linecap="round"/>
-  <line x1="220" y1="160" x2="190" y2="220" stroke="white" stroke-width="8" stroke-linecap="round"/>
-  <line x1="220" y1="160" x2="250" y2="200" stroke="white" stroke-width="8" stroke-linecap="round"/>
-  <path d="M 50 240 L 350 240" stroke="white" stroke-width="2" opacity="0.5"/>
-  <path d="M 80 250 L 100 240 L 120 250" stroke="white" stroke-width="3" fill="none" opacity="0.6"/>
-  <path d="M 180 255 L 200 245 L 220 255" stroke="white" stroke-width="3" fill="none" opacity="0.6"/>
-  <path d="M 280 250 L 300 240 L 320 250" stroke="white" stroke-width="3" fill="none" opacity="0.6"/>
+  
+  <!-- Background -->
+  <rect width="400" height="200" fill="url(#runGrad)"/>
+  
+  <!-- Track lanes -->
+  <line x1="0" y1="140" x2="400" y2="140" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
+  <line x1="0" y1="160" x2="400" y2="160" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
+  
+  <!-- Track curve lines -->
+  <path d="M 0 180 Q 100 175, 200 180 T 400 180" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.25"/>
+  
+  <!-- Professional runner silhouette in motion -->
+  <g transform="translate(200, 90)">
+    <!-- Head -->
+    <ellipse cx="0" cy="-25" rx="18" ry="20" fill="#ffffff" opacity="0.95"/>
+    <ellipse cx="0" cy="-25" rx="16" ry="18" fill="#ec4899" opacity="0.3"/>
+    
+    <!-- Body leaning forward (dynamic running pose) -->
+    <ellipse cx="5" cy="10" rx="20" ry="35" fill="#ffffff" opacity="0.95" transform="rotate(10, 5, 10)"/>
+    
+    <!-- Arms pumping -->
+    <!-- Front arm forward -->
+    <line x1="0" y1="-5" x2="-25" y2="-20" stroke="#ffffff" stroke-width="10" stroke-linecap="round" opacity="0.95"/>
+    <!-- Back arm backward -->
+    <line x1="5" y1="0" x2="30" y2="15" stroke="#ffffff" stroke-width="10" stroke-linecap="round" opacity="0.95"/>
+    
+    <!-- Legs in running stride -->
+    <!-- Front leg lifted high -->
+    <line x1="5" y1="30" x2="-5" y2="50" stroke="#ffffff" stroke-width="12" stroke-linecap="round" opacity="0.95"/>
+    <line x1="-5" y1="50" x2="-10" y2="70" stroke="#ffffff" stroke-width="12" stroke-linecap="round" opacity="0.95"/>
+    
+    <!-- Back leg pushing off -->
+    <line x1="8" y1="30" x2="25" y2="55" stroke="#ffffff" stroke-width="12" stroke-linecap="round" opacity="0.95"/>
+    <line x1="25" y1="55" x2="35" y2="75" stroke="#ffffff" stroke-width="12" stroke-linecap="round" opacity="0.95"/>
+    
+    <!-- Running shoe detail on back foot -->
+    <ellipse cx="37" cy="78" rx="12" ry="6" fill="#ec4899" opacity="0.8"/>
+  </g>
+  
+  <!-- Motion blur/speed lines -->
+  <line x1="100" y1="70" x2="60" y2="70" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+  <line x1="105" y1="85" x2="70" y2="85" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+  <line x1="110" y1="100" x2="80" y2="100" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.25"/>
+  
+  <!-- Ground impact -->
+  <ellipse cx="235" cy="170" rx="15" ry="5" fill="#ffffff" opacity="0.3"/>
+  
+  <!-- Additional motion effects -->
+  <circle cx="90" cy="65" r="3" fill="#ffffff" opacity="0.5"/>
+  <circle cx="95" cy="78" r="2" fill="#ffffff" opacity="0.4"/>
+  <circle cx="85" cy="90" r="2" fill="#ffffff" opacity="0.35"/>
 </svg>
