@@ -1,0 +1,15 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="swimGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#swimGrad)"/>
+  <circle cx="200" cy="80" r="30" fill="white" opacity="0.9"/>
+  <ellipse cx="200" cy="150" rx="60" ry="30" fill="white" opacity="0.9"/>
+  <line x1="140" y1="150" x2="100" y2="120" stroke="white" stroke-width="8" stroke-linecap="round"/>
+  <line x1="260" y1="150" x2="300" y2="180" stroke="white" stroke-width="8" stroke-linecap="round"/>
+  <path d="M 50 220 Q 100 200 150 220 T 250 220 T 350 220" stroke="white" stroke-width="3" fill="none" opacity="0.6"/>
+  <path d="M 50 250 Q 100 230 150 250 T 250 250 T 350 250" stroke="white" stroke-width="3" fill="none" opacity="0.6"/>
+</svg>
