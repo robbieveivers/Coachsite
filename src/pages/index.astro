@@ -21,6 +21,21 @@ const base = import.meta.env.BASE_URL;
     </p>
   </section>
 
+  <section class="coaching-gallery-section">
+    <h2 class="section-title">Coaching in Action</h2>
+    <div class="coaching-gallery">
+      <div class="gallery-item">
+        <img src={`${base}/images/coaching/coaching-1.jpg`} alt="Coach Chelsea Seymour working with triathlon athletes during training session" class="gallery-image" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src={`${base}/images/coaching/coaching-2.jpg`} alt="Personalized triathlon coaching and technique analysis" class="gallery-image" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src={`${base}/images/coaching/coaching-3.jpg`} alt="One-on-one coaching sessions for Ironman and triathlon preparation" class="gallery-image" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
   <section>
     <h2 class="section-title">Coaching Services</h2>
     <div class="services">
@@ -210,6 +225,44 @@ const base = import.meta.env.BASE_URL;
     transform: translateY(-3px);
     box-shadow: var(--shadow-lg);
   }
+
+  .coaching-gallery-section {
+    margin: 3rem 0;
+  }
+
+  .coaching-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+    aspect-ratio: 4 / 3;
+    background: var(--gray-light);
+  }
+
+  .gallery-item:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  .gallery-item:hover .gallery-image {
+    transform: scale(1.05);
+  }
   
   @media (max-width: 768px) {
     .hero {
@@ -235,6 +288,11 @@ const base = import.meta.env.BASE_URL;
     
     .services {
       grid-template-columns: 1fr;
+    }
+    
+    .coaching-gallery {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
     }
   }
 </style>
